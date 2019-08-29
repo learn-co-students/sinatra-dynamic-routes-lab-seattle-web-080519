@@ -1,0 +1,15 @@
+<% if @operation == "add" %>
+    <% @sum = @number1.to_i + @number2.to_i %>
+    <%= "#{@sum}" %>
+<% elsif @operation == "subtract" %>
+    <% @difference = @number1.to_i - @number2.to_i %>
+    <%= "#{@difference}" %>
+<% elsif @operation == "multiply" %>
+    <% @product = @number1.to_i * @number2.to_i %>
+    <%= "#{@product}" %>
+<% elsif @operation == "divide" %>
+    <% @quotient = @number1.to_i / @number2.to_i %>
+    <%= "#{@quotient}" %>
+<% else %>
+    <% "Please put a proper operation." %>
+<% end %>
